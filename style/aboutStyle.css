@@ -1,0 +1,46 @@
+/* main style */
+
+main {
+    max-width: calc(var(--maximum-width) - 100px);
+    color: var(--second-font-color);
+    height: calc(80vh - 92.8px);
+    font-weight: 600;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* end of main */
+
+/* footer style */
+
+footer {
+    width: var(--third-maximum-width);
+    margin: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+footer .icons {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+footer .icons .anIcon a i {
+    font-size: 40px;
+    color: var(--second-font-color);
+    transition: all .4s ease;
+}
+
+footer .icons .anIcon a:hover i {
+    font-weight: 500;
+    font-size: 60px;
+    color: var(--main-hover-font-color);
+}
+
+/* end of footer */

@@ -1,0 +1,60 @@
+<!-- المظهر العام:
+شاشة بسيطة تحتوي على عنوان في الأعلى مثل "To-Do List".
+تحت العنوان، يوجد مربع نص لكتابة المهمة.
+يوجد زر إضافة بجانب المربع لإضافة المهمة إلى القائمة.
+تحت المربع، تظهر قائمة المهام، كل مهمة في عنصر قائمة (li).
+بجانب كل مهمة، يوجد زر حذف، وعند الضغط عليه، يتم حذف المهمة.
+وظائف البرنامج:
+عند إدخال النص في مربع الإدخال والضغط على زر إضافة، يتم إضافة المهمة إلى القائمة أسفل المربع.
+عندما يظهر المهمة في القائمة، يمكن للمستخدم الضغط على زر الحذف بجانب أي مهمة لحذفها.
+يمكن إضافة تأثير بصري (اختياري) عندما يتم الضغط على المهمة، مثل تغيير اللون أو إضافة خط فوقها لتوضيح أن المهمة مكتملة.
+الأشياء التي يجب أن تتوفر:
+الواجهة بسيطة، تركز على وظائف إضافة المهام وحذفها.
+يجب أن يكون البرنامج قابل للاستخدام من دون تعقيد أو أشياء إضافية.
+التأكد من أن المهام تظل في القائمة بعد إضافة كل مهمة، مع إمكانية حذفها بشكل سهل. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/mainStyle.css" />
+    <link rel="stylesheet" href="style/mainTasksStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/titleIcon.png">
+    <title>To-Do List</title>
+  </head>
+  <body id="body">
+    <nav>
+      <div class="nav-bar">
+        <div class="logo">To-Do List</div>
+        <div class="menu">
+          <ul class="drop-down">
+            <li>
+              <a style="color: var(--main-hover-font-color)" href="#">Home</a>
+            </li>
+            <li><a href="html/about.html">About</a></li>
+            <li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="taskInputBlock">
+        <input type="text" required class="taskInput" placeholder="Enter a new goal in this year!">
+        <button type="button" class="taskInputButton"></button>
+      </div>
+      <div class="myTasks">
+      </div>
+    </main>
+    <button class="btn" id="theme-btn-main"></button>
+    <script src="script/saveTasksScript.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>

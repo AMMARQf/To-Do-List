@@ -1,0 +1,135 @@
+
+main {
+    max-width: var(--maximum-width);
+    margin: auto;
+    padding:  15px;
+    margin-top: 100px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.taskInputBlock {
+    width: 100%;
+    position: relative;
+}
+
+
+.taskInputBlock .taskInput {
+    width: 100%;
+    padding: 10px 50px 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--taskInput-background-color);
+    outline: 0;
+    color: var(--taskInput-color);
+}
+
+.taskInputBlock .taskInput::placeholder {
+    color: var(--placeholder-color);
+}
+
+.taskInputBlock .taskInputButton {
+    border: none;
+    background-image: linear-gradient(40deg, #d4fff0, #55edb8);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.taskInputBlock .taskInputButton:hover {
+    width: 77px;
+    background-image: linear-gradient(-40deg, #69ffcb, #177c58);
+}
+
+.taskInputBlock .taskInputButton::after {
+    transition: all .2s ease-in-out;
+    content: 'Add Goal';
+    color: white;
+    display: block;
+    width: 0px;
+    position: absolute;
+    height: 25px;
+    top: 3px;
+    transform: translateX(50%);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.taskInputBlock .taskInputButton:hover::after {
+    transition: all .2s ease-in-out;
+    display: block;
+    transform: translateX(0);
+    width: 77px;
+}
+
+.myTasks {
+    /* background-color: #ff000027; */
+    padding: 20px;
+}
+
+.taskBlock {
+    padding: 10px;
+    position: relative;
+    margin: 20px;
+    border-radius: 6px;
+    transition: all .2s ease;
+}
+
+.taskBlock:hover {
+    box-shadow: 0 0 20px 0px var(--box-shadow-color);
+}
+
+.taskBTN {
+    cursor: pointer;
+    width: 30px;
+    min-height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--second-hover-background);
+    transition: all .2s ease;
+}
+
+.taskBTN::after {
+    transition: all 0s ease;
+    content: 'delete';
+    color: transparent;
+    display: block;
+}
+
+.taskBTN:hover::after {
+    display: block;
+    transition: all .2s .2s ease;
+    color: var(--main-hover-font-color);
+}
+
+.taskBTN:hover {
+    width: auto;
+    padding: 0 10px;
+}
+
+.taskText {
+    /* background-color: #96969653; */
+    width: calc(100% - 80px);
+    color: var(--main-font-color);
+}
+
+.temp {
+    color: var(--second-font-color);
+    padding-top: 150px;
+    text-align: center;
+}
