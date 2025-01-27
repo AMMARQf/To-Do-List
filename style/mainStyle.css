@@ -136,3 +136,52 @@ nav {
     color: var(--main-hover-font-color);
     font-weight: 700;
 }
+
+@media (max-width: 500px) {
+    .btn {
+        width: 80px;
+        height: 50px;
+        right: 50%;
+        bottom: 46px;
+        font-weight: 700;
+        transform: translateX(50%);
+        z-index: 1001;
+        font-size:larger;
+        border-radius: 20px;
+        background: transparent;
+    }
+    .btn:hover {
+        background: transparent;
+        color: var(--main-font-color);
+    }
+    .nav-bar {
+        display: block;
+        width: 100%;
+    }
+    .nav-bar .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-bar .drop-down {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        /* gap: 30px; */
+        flex-wrap: nowrap;
+    }
+    .nav-bar .menu .drop-down li {
+        display: flex;
+    }
+    .menu {
+        position: fixed;
+        background: #00000017;
+        z-index: 1000;
+        width: 75%;
+        height: 60px;
+        border-radius: 2rem;
+        bottom: 40px;
+        right: 50%;
+        transform: translateX(50%);
+        backdrop-filter: blur(7px);
+    }
+}

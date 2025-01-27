@@ -44,3 +44,13 @@ footer .icons .anIcon a:hover i {
 }
 
 /* end of footer */
+
+@media (max-width: 600px) {
+    footer {
+        width: 80%;
+        bottom: 130px;
+    }
+    footer .icons .anIcon a:hover i {
+        font-size: 40px;
+    }
+}
